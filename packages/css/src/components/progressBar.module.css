@@ -1,0 +1,39 @@
+.ProgressBar {
+  width: 100%;
+  border-radius: var(--spacing-m);
+  background: var(--secondary-lighter);
+}
+
+.ProgressBar-indicator {
+  background-color: var(--primary);
+  border-radius: var(--spacing-m);
+  transition: var(--duration--slow-01) var(--standard-expressive-curve);
+  height: 100%;
+}
+
+.ProgressBar-indicator--small {
+  height: var(--spacing-m);
+}
+
+.ProgressBar-indicator--regular {
+  height: var(--spacing);
+}
+
+.ProgressBar-indicator--indeterminate {
+  background-color: var(--primary);
+  border-radius: var(--spacing-m);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 32%;
+  animation: indeterminate-progress-bar 1.4s infinite linear;
+}
+
+@keyframes indeterminate-progress-bar {
+  from {
+    left: -32%;
+  }
+  to {
+    left: 100%;
+  }
+}
