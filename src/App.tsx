@@ -1,8 +1,6 @@
 
 import React from 'react';
-import { AIButton } from '../packages/core/ai-components/AIButton';
-import { Text } from '../packages/core/components';
-import { Table, Column, Row } from '../packages/core/components';
+import { Text, Button, Table } from '../packages/core/components';
 
 const App: React.FC = () => {
   // Sample customer data for the table
@@ -29,8 +27,8 @@ const App: React.FC = () => {
         
         {/* Action Buttons */}
         <div className="mt-6 mb-10 flex justify-center gap-4">
-          <AIButton appearance="primary">Login</AIButton>
-          <AIButton>Signup</AIButton>
+          <Button appearance="primary">Login</Button>
+          <Button appearance="basic">Signup</Button>
         </div>
       </div>
       
