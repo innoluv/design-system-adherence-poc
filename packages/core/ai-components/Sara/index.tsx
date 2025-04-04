@@ -1,9 +1,10 @@
+
 import * as React from 'react';
-import { TSaraStates, TBaseHtmlProps } from '../common.type';
 import { Player } from '@lottiefiles/react-lottie-player';
 import AIResting from './assets/AI-Resting.json';
 import AILogo from './assets/AI-Sara.svg';
 import classNames from 'classnames';
+import { TSaraStates, TBaseHtmlProps } from '../common.type';
 
 export interface SaraProps extends TBaseHtmlProps<HTMLDivElement> {
   /**
