@@ -1,3 +1,4 @@
+
 export * as Utils from './utils';
 
 export { Avatar } from './components/atoms/avatar';
@@ -104,4 +105,4 @@ export { AIIconButton } from './ai-components/AIIconButton';
 export { AIChip } from './ai-components/AIChip';
 export { AIResponse } from './ai-components/AIResponse';
 
-export { version } from '../package.json';
+// Removed the version export that was causing the error
