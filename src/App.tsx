@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Text, Button, Table } from '../packages/core/components';
+import { Text, Button, Table } from '../packages/core';
 
 const App: React.FC = () => {
   // Sample customer data for the table
